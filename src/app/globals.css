@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  /* Theme-adaptive: flips between light/dark mode */
+  --paper: #faf9f6;
+  --ink: #16213d;
+  --ink-muted: #4b5468;
+  --accent: #b98b3e;
+  --accent-soft: #f1e4c9;
+  --border: #e4e0d6;
+
+  /* Fixed: always dark / always light, regardless of theme.
+     Used only for the navy hero/footer bands, so their text
+     must NOT be theme-adaptive or it disappears in dark mode. */
+  --navy: #0f1e38;
+  --navy-deep: #0b1526;
+  --cream: #faf6ec;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-cream: var(--cream);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-border: var(--border);
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0b1526;
+    --ink: #f2efe9;
+    --ink-muted: #b7bdcc;
+    --accent: #d9ac5b;
+    --accent-soft: #2a2416;
+    --border: #23324f;
+    /* --navy, --navy-deep, --cream intentionally NOT overridden here */
+  }
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
