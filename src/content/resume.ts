@@ -15,10 +15,45 @@ export const profile = {
   ],
 };
 
-export const aiCallout = {
-  heading: "Currently exploring AI-driven delivery",
-  body: "Building hands-on capability in Generative AI, LLM workflows, and agent-based systems — including Claude Code and agentic AI tooling. Applying two decades of delivery execution to AI-driven and startup environments.",
+export const aiProjectsIntro = {
+  heading: "Building AI Depth",
+  body: "Applying two decades of delivery execution to hands-on AI-assisted builds — using Claude Code, Generative AI, and agentic tooling on real, personal projects rather than just courses.",
 };
+
+export type AIProject = {
+  title: string;
+  description: string;
+  status: "Live" | "In Progress";
+  tech: string[];
+  link?: string;
+  linkLabel?: string;
+};
+
+export const aiProjects: AIProject[] = [
+  {
+    title: "This Portfolio",
+    description:
+      "This site itself — built end-to-end with Claude Code, from a consolidated résumé to a live, auto-deploying website.",
+    status: "Live",
+    tech: ["Next.js", "Tailwind CSS", "Claude Code", "GitHub", "Vercel"],
+    link: "https://github.com/pjain-dotcom/payal-jain-IT-portfolio",
+    linkLabel: "View Repo",
+  },
+  {
+    title: "Homework Tracker",
+    description:
+      "A homework tracker for my child — consolidated into a Notion database with views for pending, completed, and upcoming assessments, refreshed automatically on a daily schedule.",
+    status: "Live",
+    tech: ["Claude Code", "Notion", "Scheduled Automation"],
+  },
+  {
+    title: "Video Production Pipeline",
+    description:
+      "Building an end-to-end AI-assisted video production pipeline — automated scene generation, audio processing, and assembly using custom Claude Code skills.",
+    status: "In Progress",
+    tech: ["Claude Code", "FFmpeg", "AI Image/Video Generation"],
+  },
+];
 
 export const skillCategories = [
   {
