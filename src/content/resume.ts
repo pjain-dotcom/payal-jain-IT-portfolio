@@ -3,15 +3,15 @@
 
 export const profile = {
   name: "Payal Jain M",
-  title: "Technical Delivery Leader",
+  title: "Senior Delivery & Transformation Leader",
   location: "Melbourne, VIC, Australia",
   email: "payal.jm@gmail.com",
   linkedin: "https://www.linkedin.com/in/payaljain-m",
   headshot: "/headshot.jpg",
   yearsExperience: "19+",
   summary: [
-    "Technical Delivery Leader with 19+ years of experience driving complex technology programs across enterprise applications, data platforms, and cloud environments. Known for translating business objectives into executable technical plans and ensuring end-to-end delivery in fast-moving, multi-stakeholder environments.",
-    "Strong background leading cross-functional teams (engineering, data, business), solving execution challenges, and delivering scalable solutions across banking, government, and enterprise domains.",
+    "Driving large-scale digital transformation, ERP/cloud migration, and multi-million-dollar technology programs across banking, automotive, and government sectors. Trusted by C-suite and senior stakeholders to translate complex initiatives into clear business outcomes — owning governance, risk, and executive reporting on programs up to AU$80M.",
+    "Partners closely with architects and engineering teams to translate technology decisions into business value — building ROI-driven business cases and aligning execution with organisational strategy across cloud, integration, and data ecosystems.",
   ],
 };
 
@@ -52,6 +52,13 @@ export const aiProjects: AIProject[] = [
       "Building an end-to-end AI-assisted video production pipeline — automated scene generation, audio processing, and assembly using custom Claude Code skills.",
     status: "In Progress",
     tech: ["Claude Code", "FFmpeg", "AI Image/Video Generation"],
+  },
+  {
+    title: "Event Registration Automation",
+    description:
+      "An automated event-registration pipeline — validating payments from Google Form submissions, matching registrants to the right event, and sending WhatsApp invites automatically.",
+    status: "In Progress",
+    tech: ["Claude Code", "Make.com", "Google Sheets", "WhatsApp Automation"],
   },
 ];
 

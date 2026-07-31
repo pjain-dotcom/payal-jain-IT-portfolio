@@ -14,9 +14,9 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Payal Jain M — Technical Delivery Leader",
+  title: "Payal Jain M — Senior Delivery & Transformation Leader",
   description:
-    "Technical Delivery Leader with 19+ years of experience driving complex technology programs across enterprise applications, data platforms, and cloud environments.",
+    "Senior Delivery Leader with 19+ years driving large-scale digital transformation, ERP/cloud migration, and multi-million-dollar technology programs across banking, automotive, and government sectors.",
 };
 
 export default function RootLayout({
