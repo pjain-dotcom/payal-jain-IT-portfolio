@@ -57,8 +57,15 @@ export const aiProjects: AIProject[] = [
     title: "Event Registration Automation",
     description:
       "An automated event-registration pipeline — validating payments from Google Form submissions, matching registrants to the right event, and sending WhatsApp invites automatically.",
-    status: "In Progress",
+    status: "Live",
     tech: ["Claude Code", "Make.com", "Google Sheets", "WhatsApp Automation"],
+  },
+  {
+    title: "Lead Qualification Assistant",
+    description:
+      "An AI tool that classifies incoming messages — sales lead, complaint, or review — scores lead urgency, and drafts a reply. Built hands-on to learn sales-funnel and lead-qualification fundamentals from scratch.",
+    status: "Live",
+    tech: ["Claude Code", "LLM API", "Prompt Engineering"],
   },
 ];
 
